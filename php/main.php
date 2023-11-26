@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All in One PDF</title>
   <link rel="stylesheet" href="../css/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <?php 
   require "../html/header.html" 
   ?>
+  <!--<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>-->
 </head>
+
 <body>
   
 <div 
@@ -79,13 +82,13 @@ class="bg-indigo-100 py-6 md:py-12"
         <!--multiple div icon start-->
 
         <div 
-        class="flex justify-between mt-9"
+        class="md:flex md:justify-between col-auto mt-9"
         >
-          <div 
-          class="py-4 px-5 bg-red-200"
-          >
-            01
-          </div>
+          <div>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+              </svg>
+            </div>
           <div 
           class="py-4 px-5 bg-green-200 "
           >
@@ -114,7 +117,7 @@ class="bg-indigo-100 py-6 md:py-12"
         </div>
 
         <div 
-        class="flex justify-between mt-9"
+        class="md:flex justify-between mt-9"
         >
           <div 
           class="py-4 px-5 bg-red-200"
@@ -145,6 +148,8 @@ class="bg-indigo-100 py-6 md:py-12"
         </div>
 
         <!--multiple div icon end-->
+
+        
 
       </div>
   </div> 
