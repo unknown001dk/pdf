@@ -1,0 +1,2 @@
+CREATE DATABASE pdfDB;
+use pdfDB;
