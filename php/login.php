@@ -5,12 +5,12 @@ session_start();
 
   if($_SERVER['REQUEST_METHOD'] === "POST")
   {
-    $user_name = $_POST['user_name'];
+    $user_name = $_POST['username'];
     $password = $_POST['password'];
 
     if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
     {
-      $query = "select * from Register where user_name = $user_name limit 1";
+      $query = "select * from register where username = $user_name limit 1";
       $result = mysqli_query($con, $query);
 
       if($result)
@@ -19,7 +19,7 @@ session_start();
         {
           $user_data = mysqli_fetch_assoc($result);
           
-          if($user_data['password'] === $password)
+          if($user_data['password'] === $password && ['username'] === $user_name)
           {
             header("Location: main.php");
             die;
